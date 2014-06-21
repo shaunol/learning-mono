@@ -3,7 +3,7 @@ FROM centos:6.4
 MAINTAINER shaunol
 
 # Env setup
-ENV home /root
+ENV HOME /root
 WORKDIR ~/
 
 # Build tools
