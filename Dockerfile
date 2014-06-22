@@ -6,8 +6,10 @@ MAINTAINER shaunol
 ENV HOME /root
 WORKDIR ~/
 
-# Build tools
-RUN yum install -y git autoconf libtool gcc-c++ which gettext
+# Build deps
+# mono deps: git, autoconf, libtool, gcc-c++, which, gettext
+# K runtime deps: unzip
+RUN yum install -y git autoconf libtool gcc-c++ which gettext unzip
 
 # Mono install
 # monolite is coming from my dropbox because the xamarin cdn is unreliable
